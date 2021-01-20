@@ -38,9 +38,7 @@ const romanize = (num) => {
      while(start <= limit){
         let roman = romanize(start);
         start++;
-        if(!roman.includes('X')){
-            continue;
-        }
+        if(!roman.includes('X')) continue;
         noOfXs += roman.split('').filter(r => r=='X').length;
 
      }
